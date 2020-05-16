@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">MIMA</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#description">Description</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datamodel">Data Model</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Use Cases</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- head-->
+        <header class="masthead h-auto pb-5">
+            <div class="container d-flex h-100 align-items-center pt-5 pb-0">
+                <div class="mx-auto row pt-5 pb-0">
+                    <div class="col-sm-6 col-lg-6 pt-5 pb-0">
+                        <h3 class="mx-auto my-0 text-uppercase">MIMA</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Multi-disciplinary Interpretations model on Manuscript Apparatus</h2>
+                        <!-- <a class="btn btn-primary js-scroll-trigger" href="#description">Get Started</a> --> 
+                    </div>
+                    <div class="col-sm-6 col-lg-6 pt-5 pb-0">
+                        <p style="word-wrap:break-word">MIMA semantic data model allows to represent the logical and physical structure of an illuminated manuscript, its contents, and scholars’ comments on fragments of the manuscript. The project addresses the formal representation of scholars’ multidisciplinary analyses performed on the same artefact, namely Pellegrino Prisciani’s Historiae Ferrarie. Data has been mined from the cycle of lectures called “Scrivere, rappresentare, conoscere nel rinascimento. Pellegrino Prisciani, un intellettuale eclettico tra la corte e il mondo”and includes statements about philological, art historical, and paleographical aspects related to the illuminated manuscript. </p>
+                           
+                        <p>The realised documentation allows to represent the logical and physical structure of an illuminated manuscript, its contents, and scholars’ comments on fragments of the manuscript.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+ <!-- Description-->
+<section class="description-section text-center" id="description">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4">Description</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none; font-size:60%" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Scope of the model
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="text-black-50 text-left">
+                            Ontological representation of hermeneutics requirements can be summarised in:<br></br>
+                            <ul>
+                            <li><b>Type of statement</b>. A classification of the questionable statement, e.g. artwork attribution, philological reading.</li>
+                            <br>
+                            <li><b>Sources</b>. The document where the statement is recorded (e.g digital and analogue artefacts), and primary and secondary sources that are used (e.g. cited, analysed, subject of) to support the statement along with their contextual information (e.g. identifiers, authors). </li>
+                            <br>
+                            <li><b>Agents</b>. Information necessary to uniquely identify agents (e.g. first and second knowledge providers, software agents) and their role in the digital hermeneutical process.</li>
+                            <br>
+                            <li><b>Motivations</b>. A classification of motivations used to justify the endorsement of a hypothesis (e.g. auction catalogues, scholars’ verbal communications).</li>
+                            <br>
+                            <li><b>Certainty</b>. Is the quality of a statement that characterises its degree of precision (e.g. “The author wrote his main work in 1994(?)”).</li>
+                            <br>
+                            <li><b>Relations</b>. Relations include those between sources (e.g. an article cited in a cataloguing record), between sources and agents (e.g. authors), between statements and sources (e.g. a source provides evidence for the statement), statements and agents (e.g. people that agree on the statement), and between statements (e.g. attributions in agreement). Relations may also be the subject of assertions (e.g. the relation between an artist and the artwork she created).</li>
+                            <ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none; font-size:60%" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Layered approach to formal representation
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="text-black-50 text-left">
+                            We foster a source-driven representation of questionable statements. Specifically, questionable statements are represented as facts that are valid in the context of the source where these are recorded, and context information is grouped in layers. Such layers can be summarised as follows: <br>
+                            <br>
+                            <ul>
+                                <li>Layer 0. Factual data that are part of scholars’ background knowledge </li>
+                                <li>Layer 1. The scope of scholars’ questionable statements </li>
+                                <li>Layer 2. Context information for hypotheses assessment </li>
+                                <li>Layer 3. Provenance information of the mining processes </li>
+                            </ul>
+                            Such an organisation allows us to isolate data according to the nature of information at hand and to define patterns between layers. In order to provide an efficient data-driven representation of information, avoiding redundancy and overengineering of ontologies, we propose the usage of named graphs to separate such four layers, and the usage of a high level data model for relating graphs meaningfully. We selected the <a href=”http://nanopub.org/wordpress/”>Nanopublication data model</a> to link graphs relevant to three out of four layers (i.e. factual data excluded). 
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" style="text-decoration:none; font-size:60%" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Ontologies Selection
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="text-black-50 text-left">Considering the <a href="#page-top">sake of this research</a>, existing ontologies allow to singularly represent each <a href="#collapseOne">requirement</a>, but none of those covers all the aspects at hand. <br><br>
+                        We therefore designed a modular, orthogonal data model where specific sets of ontologies apply to each layer, with little overlap, so as to avoid harmonisation tasks among a wide set of ontologies and inconsistencies. The ontologies that apply to each layer are the following:<br><br>
+                        <ul>
+                            <li>
+                                <b>Factual bibliographic and cataloguing data</b> has a pragmatic nature, that is, to allow quick identification of objects involved in the hermeneutical discourse. We selected the <a href="http://www.sparontologies.net/ontologies">SPAR ontologies</a>, a well-known set of ontologies for representing the publishing domain, to describe bibliographic resources and serial objects (e.g. photographs), and <a href="http://www.cidoc-crm.org/cidoc-crm">CIDOC-CRM</a> to describe cultural objects that are unica.
+                            </li>    
+                            <li>
+                                The scope of <b>scholars’ questionable statements</b> is highly domain-dependent, and there are no one-size-fits-all solutions. We foster the reuse of <a href="http://www.cidoc-crm.org/cidoc-crm">CIDOC-CRM</a> as much as possible, supported by ancillary ontologies (mostly extensions of the former) to cover specific issues, such as <a href="http://w3id.org/vir">VIR</a> for representing iconographic aspects, <a href="http://purl.org/emmedi/oaentry">OAEntry</a>  for representing relations between artefacts.
+                            </li>    
+                            <li>    
+                                <b>Context information</b> for hypothesis assessment includes features that characterise the validity of the statement, such as classifications, motivations, responsible agents, and sources. <a href="http://purl.org/emmedi/hico">HiCO</a>, an extension of the <a href="http://www.w3.org/ns/prov">PROV Ontology</a> covers all of such aspects, along with terms from <a href="">CWRC</a> to qualify the degree of certainty.
+                            </li>
+                            <li>
+                                <b>Provenance information</b> of the mining process addresses procedures and responsible agents involved in the automatic or semi-automatic generation of information that populate prior layers (e.g. knowledge extraction, data reengineering, reconciliation). We selected the <a href="http://www.w3.org/ns/prov">PROV</a> ontology to describe such aspects.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- datamodel-->
+        <section class="datamodel-section bg-light text-center" id="datamodel">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Data Model</h2>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom:2rem">
+                <div class="col-s-0 col-1 mx-auto"></div>
+                <div class="col-s-12 col-5 mx-auto text-left">
+                    The aim of MIMA is to guide ontology designers through the description of hermeneutical aspects by providing them real-world, documented, and tested examples. To foster semantic interoperability only existing ontologies were reused (with the exception of <code>mima:has_missing_attribute</code>), which can be imported in new ontologies or directly reused as-is according to specific project requirements. <br><br>
+
+                    MIMA data model is fully represented in this section according to its four layers. 
+
+                </div>
+                <div class="col-s-12 col-5 mx-auto text-left" style="font-size:0.7rem; padding-left:10rem; line-height: 0.9rem;">
+                    <code>
+                    cito: &lt;http://purl.org/spar/cito/&gt;<br>
+                    crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;<br>
+                    cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;<br>
+                    dcterms: &lt;http://purl.org/dc/terms/&gt;<br>
+                    fabio: &lt;http://purl.org/spar/fabio/&gt;<br>
+                    frbr: &lt;http://purl.org/vocab/frbr/core&gt;<br>
+                    hico: &lt;http://purl.org/emmedi/hico/&gt;<br>
+                    mima: &lt;https://w3id.org/mima/&gt;<br>
+                    np: &lt;http://www.nanopub.org/nschema#&gt;<br>
+                    oaentry: &lt;http://purl.org/emmedi/oaentry/&gt;<br>
+                    owl: &lt;http://www.w3.org/2002/07/owl#&gt;<br>
+                    prov: &lt;http://www.w3.org/ns/prov#&gt;<br>
+                    rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                    vir: &lt;http://w3id.org/vir#&gt;<br>
+                    xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+                    </code>
+                </div>
+                <div class="col-s-0 col-1 mx-auto"></div>
+            </div>
+            <div class="container">
+
+
+                <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="layer0-tab" data-toggle="tab" href="#layer0" role="tab" aria-controls="layer0" aria-selected="true">Layer0</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="layer1-tab" data-toggle="tab" href="#layer1" role="tab" aria-controls="layer1" aria-selected="false">Layer1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="layer2-tab" data-toggle="tab" href="#layer2" role="tab" aria-controls="layer2" aria-selected="false">Layer2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="layer3-tab" data-toggle="tab" href="#layer3" role="tab" aria-controls="home" aria-selected="false">Layer3</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="layer0" role="tabpanel" aria-labelledby="layer0-tab">
+                        <div class="alert bg-light" role="alert">
+                            Information in this layer answers questions such as: Which are the artefacts that are part of the hermeneutic discourse (either subject of or supporting material questionable statements)? It includes bibliographic metadata (e.g. the edition of a work), the physical and logical description of artefacts (e.g. the folios of a manuscript), and explicit relations between artefacts, such as citations or quotations. It’s worth to notice that statements of layer 0 can be organised in several named graphs, that can be the subject of assertions included in layer 1. For instance, a manuscript feature (factual) may be described because of the usage of a different ink. 
+                        </div>
+                        <img src="imgs/layer0.svg">     
+                        Documents are individuals of the class <code>fabio:Expression</code> when referring to their contents and of the class <code>fabio:Manifestation</code> when referring to a specific edition. Cultural objects are individuals of the class <code>crm:E22_Man-Made_Object</code>. Basic bibliographic metadata include titles (<code>dcterms:title</code>), authors (<code>dcterms:creator</code>), place of publication (<code>fabio:hasPlaceOfPublication</code>), and dates (<code>fabio:hasPublicationYear</code>). Relations between artefacts are represented by using subproperties of cito:cites to specify the type of reference. Objects are linked to their textual and visual content (e.g sections, paragraphs, maps, illustrations) which are individuals of <code>crm:E25_Man-Made_Feature</code> or <code>vir:IC1_Iconographical_Atom</code>), as well as to physical features (e.g. recto and verso, instances of <code>vir:IC19_Recto</code> and <code>vir:IC20_Verso</code>). 
+                    </div>
+                    <div class="tab-pane fade" id="layer1" role="tabpanel" aria-labelledby="layer1-tab">
+                        <div class="alert bg-light" role="alert">
+                            Information in this layer answers the following question: what an agent argues about? It may include any kind of questionable statement, and competing statements conveying different information on the same topic or artefact can coexist in separated graphs.
+                        </div>
+                        <img src="imgs/layer1.svg">
+                        ..gattttttinifkjfdskfhsdkjfhkjfhkdsjfhfkdjsfjds.</div>
+                    <div class="tab-pane fade" id="layer2" role="tabpanel" aria-labelledby="layer2-tab">
+                        <div class="alert bg-light" role="alert">
+                            Information in this layer answers the following questions: What type of claim is it? Who claims that? When was it claimed? What is the primary source of the statement? What is the degree of certainty? It includes provenance and context information on a statement belonging to layer 1, such as dates, sources, and criteria supporting them, and the degree of certainty.
+                        </div>
+                        <img src="imgs/layer2.svg" style="padding-left:10rem; padding-right:10rem">
+                        An individual of the class <code>hico:InterpretationAct</code> is used to characterise an assertion included in Layer 1. It is associated to a type (<code>hico:hasInterpretationType</code>), authors (<code>prov:wasAssociatedTo</code>), motivations (<code>hico:hasInterpretationCriterion</code>), a datetime (<code>prov:startedAtTime</code>), a degree of certainty (<code>cwrc:hasCertainty</code>), the source where the statement is recorded (<code>fabio:Expression</code>), and the sources used to support the statement (subproperties of <code>cito:cites</code>). Relations between statements can be represented by using subproperties of <code>cito:cites</code> to link individuals of the class <code>hico:InterpretationAct</code>.
+                    </div>
+                    <div class="tab-pane fade" id="layer3" role="tabpanel" aria-labelledby="layer3-tab">
+                        <div class="alert bg-light" role="alert">
+                            Information in this layer answers the questions such as: Who is responsible for the machine-readable version of the statement? When was it extracted? It represents the meta-context of a statement that has been automatically or semi-automatically generated.
+                        </div>
+                        <img src="imgs/layer3.svg"  style="padding-left:10rem; padding-right:10rem">
+                        The property <code>prov:wasAttributedTo</code> is used to address the entity (such a person or a software agent) responsible for the manipulation and publication of data, and the property <code>prov:generatedAtTime</code> is used to record the publication time.</div>
+                  </div>
+      
+            </div>          
+        </section> 
+        <!-- CS -->
+        <section class="signup-section" id="signup">
+            <section class="datamodel-section bg-light text-center" id="casestudies">
+               <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                     <h2 class="mb-4">Use Cases</h2>
+                  </div>
+               </div>
+               <div class="container">
+               <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="cs1-tab" data-toggle="tab" href="#cs1" role="tab" aria-controls="cs1" aria-selected="true">Palaeographic view,<br> handwriting analysis</a>
+                  </li>
+               </ul>
+               <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="layer0" role="tabpanel" aria-labelledby="layer0-tab">
+                   <div class="container">
+                        <div class="row">
+                           <div class="col-sm-12">
+                                Consider the following scenario in natural language: <br><br> 
+                                <p class="nl-scenarios"><i>The usage of inscriptional capitals is a means to convey the monumentality of the work “Historiae Ferrariae”</i></p>
+                            </div>
+                        </div>     
+                        <div class="row"> 
+                            <div class="col-sm-8">
+                                <img class="cs-images" src="imgs/cs1.svg">   
+                            </div>   
+                            <div class="col-sm-4">
+                                <p class="cs-image-description">
+                                The scenario regards the analysis of physical features of the manuscript. The palaeographic analysis of the writing process (<code>crm:E12_Production</code>) that produced a text fragment (<code>crm:E25_Man-Made_Feature</code>) may be characterised by a specific writing system (e.g latin alphabet, <code>crm:E29_Design_or_Procedure</code>), a scriptorial style (e.g. the corsiva umanistica <code>crm:E28_Conceptual_Object crm:P2_has_type crm:E55_Type</code>) and other features (e.g. bindings on the right side, <code>crm:P150_defines_typical_parts_of</code>). Moreover, the analysis of a physical feature such as a graphic typology can convey a symbolic meaning (<code>crm:E28_Conceptual_Object crm:P67_refers_to crm:E90_Symbolic_Object</code>).
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="row bg-light trig-snippet">
+                            <div class="col-sm-12 d-flex justify-content-center">
+                                <div>Here the corresponding code in Trig notation: </div>
+                            </div>
+                            <div class="col-sm-12 d-flex justify-content-center">
+                                <button class="btn btn-primary mt-2" type="button" data-toggle="collapse" data-target="#snippet1" aria-expanded="true" aria-controls="snippet1">snippet</button>
+                            </div>    
+                            <div class="collapse in" id="snippet1" aria-expanded="true" style="width:100%">     
+                                <div class="card card-body alert bg-light">
+                                <pre><code>
+hf:head_cs1 {
+    hf:pub_cs1 a np:Nanopublication .
+    hf:pub_cs1 np:hasAssertion hf:assertion_cs1 .
+    hf:pub_cs1 np:hasProvenance hf:provenance_cs1 .
+    hf:pub_cs1 np:hasPublicationInfo hf:pubInfo_cs1 .
+}  
+
+hf:assertion_cs1 { 
+hf:HF_I_incipit_illustration vir:K1_denotes hf:HF_I_incipit_illustration_rep3 .
+hf:HF_I_incipit_illustration_rep3 crm:P138_represents hf:simbolo_solennità . 
+hf:HF_I_incipit_intro-text-frag_wr crm:P108_has_produced hf:HF_I_incipit_intro-text-frag ;
+    crm:P16_used_specific_object crm:HF_I_incipit_graphic_style . 
+hf:HF_I_incipit_title-frag_wr crm:P108_has_produced hf:HF_I_incipit_title-frag_wr ; 
+    crm:P16_used_specific_object hf:HF_I_incipit_graphic_style . 
+hf:HF_I_incipit_graphic_style a crm:E28_Conceptual_Object ; 
+    crm:P67_refers_to hf:simbolo_solennità .  
+}
+
+hf:provenance_cs1 {
+    hf:assertion_cs1 prov:wasGeneratedBy hf:int_act_cs1 . 
+    hf:int_act_cs1 a hico:InterpretationAct ;
+        hico:isExtractedFrom hf:MM_palaeo_material ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;    
+        hico:hasInterpretationType mima:Palaeographical ;
+        hico:hasInterpretationCriterion mima:HandwritingAnalysis 
+}
+
+hf:pubInfo_cs1 {
+    hf:pub_cs1 prov:wasAttributedTo hf:Person_VP .
+    hf:pub_cs1 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
+}</code></pre>
+                                  
+                                </div>
+                              </div>
+                            </div> 
+                        </div>     
+
+                   <div class="query-container bg-light">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Which is the scriptorial style of "Historiae Ferrarie" I Proemium and which symbolic meaning it conveys?</p>
+                                <pre style="background-color:white"><code>
+
+SELECT ?type ?symbol
+where {
+    {?G a np:Nanopublication ; 
+        np:hasAssertion ?A; 
+        np:hasProvenance ?P; 
+        np:hasPublicationInfo ?PI . 
+
+    graph hf:assertion_cs1 {
+        ?c_object a crm:E28_Conceptual_Object; 
+            crm:P2_has_type ?type;
+            crm:P67_refers_to ?symbol. 
+        } 
+	}
+}
+
+                                </code></pre>
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">type</th>
+                                        <th scope="col">symbol</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>graphicTypology</td>
+                                        <td>Monumentality</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Which are the criterion and type of this analysis?</p>
+                                    <pre style="background-color:white">
+                                        <code>
+SELECT ?type ?crit
+where {
+    {?G a np:Nanopublication ; 
+    np:hasAssertion ?A; 
+    np:hasProvenance ?P; 
+    np:hasPublicationInfo ?PI .
+
+    graph hf:assertion_cs1 {?s ?o ?p}
+
+    graph ?P {
+        ?A prov:wasGeneratedBy ?intact . 
+        ?intact hico:hasInterpretationCriterion ?crit ; 
+            hici:hasInterpretationType ?type
+
+        }
+    }
+}
+                                        </code>
+                                    </pre>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">type</th>
+                                            <th scope="col">crit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>Palaeographical</td>
+                                            <td>HandwritingAnalysis</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                </div>
+                            </div>
+                        </div>    
+                   </div>    
+                 </div>
+               </div>
+            </div> 
+        </div>  
+        </section>
+    
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50">
+            <p>Copyright © MIMA 2020 | DOI:    | <a href="">Credits</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.it"><img alt="Licenza Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"></a><br>
+            </p>
+        </footer>
+
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
