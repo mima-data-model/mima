@@ -211,7 +211,16 @@
                             Information in this layer answers the following question: what an agent argues about? It may include any kind of questionable statement, and competing statements conveying different information on the same topic or artefact can coexist in separated graphs.
                         </div>
                         <img src="imgs/layer1.svg">
-                       </div>
+			manuscript physical features (<code>vir:IC1_Iconographical_Atom</code> and <code>crm:E25_Man-Made_Object</code>, stored in layer 0) carry (respectively <code>vir:K1_denotes</code> and <code>crm:P128_carries</code>) their conceptual meaning (respectively <code>vir:IC9_Representation</code> and <code>crm:E33_Linguistic_Object</code>). Such conceptual meaning is the interpretation given by someone to a set of signs.    
+                    	The same is for <code>crm:E22_Man-Made_Object crm:P128_carries crm:E28_Conceptual_Object</code>, representing the whole manuscript conceptual meaning. Moreover, In particular, vir allows to express iconographical items as representations and to further annotate portions of them (i.e. class <code>vir:IC10_Attribute</code>). Manuscript conceptual elements can represent or refer (<code>crm:P138_represents</code> and <code>crm:P67_refers_to</code>)to real world objects (e.g. events, symbolic meaning).
+			    <br><br>
+			    Events described in the manuscript are represented as instances of <code>crm:E5_Event</code>, along with additional information as places (<code>crm:E53_Place</code>), periods of time (<code>crm:E4_Period</code>), time-spans (<code>crm:E52_Time-Span</code>), agents (<code>crm:E39_Actor</code>), along with their relations. 
+			    <br><br>
+			    To represent copies, an illustration is both an instance of <code>vir:IC9_Representation</code> and <code>oaentry:CopyOrDerivation</code> (or one of it subclasses) and is <code>oaentry:isConceivedByMeansOf</code> another artwork (physically described in layer 0).
+			    <br><br>
+			     writing process (<code>crm:E12_Production</code>) that produced a text fragment (<code>crm:E25_Man-Made_Feature</code>) may be characterised by a specific writing system (e.g latin alphabet, <code>crm:E29_Design_or_Procedure</code>), a scriptorial style (e.g. the corsiva umanistica <code>crm:E28_Conceptual_Object crm:P2_has_type crm:E55_Type</code>) and other features (e.g. bindings on the right side, <code>crm:P150_defines_typical_parts_of</code>). 
+			    
+		    </div>
                     <div class="tab-pane fade" id="layer2" role="tabpanel" aria-labelledby="layer2-tab">
                         <div class="alert bg-light" role="alert">
                             Information in this layer answers the following questions: What type of claim is it? Who claims that? When was it claimed? What is the primary source of the statement? What is the degree of certainty? It includes provenance and context information on a statement belonging to layer 1, such as dates, sources, and criteria supporting them, and the degree of certainty.
