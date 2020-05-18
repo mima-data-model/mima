@@ -327,7 +327,7 @@ hf:pubInfo_cs1 {
 SELECT ?type ?symbol
 where {
     {?G a np:Nanopublication ; 
-        np:hasAssertion ?A; 
+        np:hasAssertion hf:assertion_cs1; 
         np:hasProvenance ?P; 
         np:hasPublicationInfo ?PI . 
 
@@ -362,11 +362,9 @@ where {
 SELECT ?type ?crit
 where {
     {?G a np:Nanopublication ; 
-    np:hasAssertion ?A; 
+    np:hasAssertion hf:assertion_cs1; 
     np:hasProvenance ?P; 
     np:hasPublicationInfo ?PI .
-
-    graph hf:assertion_cs1 {?s ?o ?p}
 
     graph ?P {
         ?A prov:wasGeneratedBy ?intact . 
