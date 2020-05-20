@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>MIMA - data model</title>
+        <title>MIMA documentation</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
@@ -148,40 +148,40 @@
 
 <!-- datamodel-->
         <section class="datamodel-section bg-light text-center" id="datamodel">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="mb-4">Data Model</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="mb-4">Data Model</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="padding-bottom:2rem">
-                <div class="col-s-0 col-1 mx-auto"></div>
-                <div class="col-s-12 col-5 mx-auto text-left">
-                    The aim of MIMA is to guide ontology designers through the description of hermeneutical aspects by providing them real-world, documented, and tested examples. To foster semantic interoperability only existing ontologies were reused (with the exception of <code>mima:has_missing_attribute</code>), which can be imported in new ontologies or directly reused as-is according to specific project requirements. <br><br>
+                <div class="row" style="padding-bottom:2rem">
+                    <div class="col-md-6 text-left">
+                        The aim of MIMA is to guide ontology designers through the description of hermeneutical aspects by providing them real-world, documented, and tested examples. To foster semantic interoperability only existing ontologies were reused (with the exception of <code>mima:has_missing_attribute</code>), which can be imported in new ontologies or directly reused as-is according to specific project requirements. <br><br>
 
-                    MIMA data model is fully represented in this section according to its four layers. 
+                        MIMA data model is fully represented in this section according to its four layers. 
 
+                    </div>
+                    <div class="col-md-6 text-left d-flex justify-content-center pl-md-5 pr-md-0">
+                        <code style="font-size:0.7rem; line-height: 0.9rem;">
+                            cito: &lt;http://purl.org/spar/cito/&gt;<br>
+                            crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;<br>
+                            cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;<br>
+                            dcterms: &lt;http://purl.org/dc/terms/&gt;<br>
+                            fabio: &lt;http://purl.org/spar/fabio/&gt;<br>
+                            frbr: &lt;http://purl.org/vocab/frbr/core&gt;<br>
+                            hico: &lt;http://purl.org/emmedi/hico/&gt;<br>
+                            mima: &lt;https://w3id.org/mima/&gt;<br>
+                            np: &lt;http://www.nanopub.org/nschema#&gt;<br>
+                            oaentry: &lt;http://purl.org/emmedi/oaentry/&gt;<br>
+                            owl: &lt;http://www.w3.org/2002/07/owl#&gt;<br>
+                            prov: &lt;http://www.w3.org/ns/prov#&gt;<br>
+                            rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                            vir: &lt;http://w3id.org/vir#&gt;<br>
+                            xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+                        </code>
+                    </div>
                 </div>
-                <div class="col-s-12 col-5 mx-auto text-left" style="font-size:0.7rem; padding-left:10rem; line-height: 0.9rem;">
-                    <code>
-                    cito: &lt;http://purl.org/spar/cito/&gt;<br>
-                    crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;<br>
-                    cwrc: &lt;http://sparql.cwrc.ca/ontologies/cwrc#&gt;<br>
-                    dcterms: &lt;http://purl.org/dc/terms/&gt;<br>
-                    fabio: &lt;http://purl.org/spar/fabio/&gt;<br>
-                    frbr: &lt;http://purl.org/vocab/frbr/core&gt;<br>
-                    hico: &lt;http://purl.org/emmedi/hico/&gt;<br>
-                    mima: &lt;https://w3id.org/mima/&gt;<br>
-                    np: &lt;http://www.nanopub.org/nschema#&gt;<br>
-                    oaentry: &lt;http://purl.org/emmedi/oaentry/&gt;<br>
-                    owl: &lt;http://www.w3.org/2002/07/owl#&gt;<br>
-                    prov: &lt;http://www.w3.org/ns/prov#&gt;<br>
-                    rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
-                    vir: &lt;http://w3id.org/vir#&gt;<br>
-                    xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-                    </code>
-                </div>
-                <div class="col-s-0 col-1 mx-auto"></div>
-            </div>
+            </div>    
             <div class="container">
 
 
@@ -263,10 +263,10 @@
                             </div>
                         </div>     
                         <div class="row"> 
-                            <div class="col-sm-8">
+                            <div class="col-md-8">
                                 <img class="cs-images" src="imgs/cs1.svg">   
                             </div>   
-                            <div class="col-sm-4">
+                            <div class="col-md-4">
                                 <p class="cs-image-description">
                                 The scenario regards the analysis of physical features of the manuscript. The palaeographic analysis of the writing process (<code>crm:E12_Production</code>) that produced a text fragment (<code>crm:E25_Man-Made_Feature</code>) may be characterised by a specific writing system (e.g latin alphabet, <code>crm:E29_Design_or_Procedure</code>), a scriptorial style (e.g. the corsiva umanistica <code>crm:E28_Conceptual_Object crm:P2_has_type crm:E55_Type</code>) and other features (e.g. bindings on the right side, <code>crm:P150_defines_typical_parts_of</code>). Moreover, the analysis of a physical feature such as a graphic typology can convey a symbolic meaning (<code>crm:E28_Conceptual_Object crm:P67_refers_to crm:E90_Symbolic_Object</code>).
                                 </p>
@@ -320,10 +320,18 @@ hf:pubInfo_cs1 {
                         </div>     
 
                    <div class="query-container bg-light">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p>Which is the scriptorial style of "Historiae Ferrarie" I Proemium and which symbolic meaning it conveys?</p>
-                                <pre style="background-color:white"><code>
+                        <div class="row ml-auto d-flex justify-content-center">
+                            <div class="row ml-auto  d-flex justify-content-center">
+                                <div class="col-md-6 col-lg-6">
+                                    <p class="w-100">Which is the scriptorial style of "Historiae Ferrarie" I Proemium and which symbolic meaning it conveys?</p>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <p class="w-100">Which are the criterion and type of this analysis?</p>
+                                </div>
+                            </div>
+                            <div class="row w-100 d-flex justify-content-center">    
+                                <div class="col-md-6 col-lg-6">
+                                    <pre class="w-100" style="background-color:white"><code>
 
 SELECT ?type ?symbol
 where {
@@ -340,61 +348,66 @@ where {
 	}
 }
 
-                                </code></pre>
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">type</th>
-                                        <th scope="col">symbol</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>graphicTypology</td>
-                                        <td>Monumentality</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                            </div>
-                            <div class="col-sm-6">
-                                <p>Which are the criterion and type of this analysis?</p>
-                                    <pre style="background-color:white">
+                                    </code></pre>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <pre class="w-100" style="background-color:white">
                                         <code>
 SELECT ?type ?crit
 where {
-    {?G a np:Nanopublication ; 
-    np:hasAssertion hf:assertion_cs1; 
-    np:hasProvenance ?P; 
-    np:hasPublicationInfo ?PI .
+{?G a np:Nanopublication ; 
+np:hasAssertion hf:assertion_cs1; 
+np:hasProvenance ?P; 
+np:hasPublicationInfo ?PI .
 
-    graph ?P {
-        ?A prov:wasGeneratedBy ?intact . 
-        ?intact hico:hasInterpretationCriterion ?crit ; 
-            hici:hasInterpretationType ?type
+graph ?P {
+    ?A prov:wasGeneratedBy ?intact . 
+    ?intact hico:hasInterpretationCriterion ?crit; 
+        hici:hasInterpretationType ?type
 
-        }
     }
+}
 }
                                         </code>
                                     </pre>
-                                    <table class="table">
+                                </div>    
+                            </div>
+                            <div class="row w-100 d-flex justify-content-center">
+                                <div class="col-md-6 col-lg-6">
+                                    <table class="table w-100">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col w-100 text-break">type</th>
+                                            <th scope="col w-100 text-break">symbol</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-break">graphicTypology</td>
+                                            <td class="text-break">Monumentality</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <table class="table w-100">
                                         <thead>
                                             <tr>
-                                            <th scope="col">type</th>
-                                            <th scope="col">crit</th>
+                                            <th scope="col w-100 text-break">type</th>
+                                            <th scope="col w-100 text-break">crit</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <td>Palaeographical</td>
-                                            <td>HandwritingAnalysis</td>
+                                            <td class="text-break">Palaeographical</td>
+                                            <td class="text-break">HandwritingAnalysis</td>
                                             </tr>
                                         </tbody>
-                                        </table>
-                                </div>
+                                    </table>
+                                </div>        
                             </div>
                         </div>    
-                   </div>    
+                    </div>    
                  </div>
                </div>
             </div> 
