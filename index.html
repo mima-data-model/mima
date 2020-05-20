@@ -49,7 +49,7 @@
         </header>
 
 
- <!-- Description-->
+<!-- Description-->
 <section class="description-section text-center" id="description">
     <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -57,60 +57,57 @@
         </div>
     </div>
     <div class="container">
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none; font-size:60%" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        Scope of the model
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <div class="text-black-50 text-left">
-                            Ontological representation of hermeneutics requirements can be summarised in:<br></br>
-                            <ul>
-                            <li><b>Type of statement</b>. A classification of the questionable statement, e.g. artwork attribution, philological reading.</li>
-                            <br>
-                            <li><b>Sources</b>. The document where the statement is recorded (e.g digital and analogue artefacts), and primary and secondary sources that are used (e.g. cited, analysed, subject of) to support the statement along with their contextual information (e.g. identifiers, authors). </li>
-                            <br>
-                            <li><b>Agents</b>. Information necessary to uniquely identify agents (e.g. first and second knowledge providers, software agents) and their role in the digital hermeneutical process.</li>
-                            <br>
-                            <li><b>Motivations</b>. A classification of motivations used to justify the endorsement of a hypothesis (e.g. auction catalogues, scholars’ verbal communications).</li>
-                            <br>
-                            <li><b>Certainty</b>. Is the quality of a statement that characterises its degree of precision (e.g. “The author wrote his main work in 1994(?)”).</li>
-                            <br>
-                            <li><b>Relations</b>. Relations include those between sources (e.g. an article cited in a cataloguing record), between sources and agents (e.g. authors), between statements and sources (e.g. a source provides evidence for the statement), statements and agents (e.g. people that agree on the statement), and between statements (e.g. attributions in agreement). Relations may also be the subject of assertions (e.g. the relation between an artist and the artwork she created).</li>
-                            <ul>
-                        </div>
-                    </div>
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none; font-size:60%" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Scope of the model
+                </button>
+            </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+            <div class="card-body">
+                <div class="text-black-50 text-left">
+                    Ontological representation of hermeneutics requirements can be summarised in:<br></br>
+                    <ul>
+                    <li><b>Type of statement</b>. A classification of the questionable statement, e.g. artwork attribution, philological reading.</li>
+                    <br>
+                    <li><b>Sources</b>. The document where the statement is recorded (e.g digital and analogue artefacts), and primary and secondary sources that are used (e.g. cited, analysed, subject of) to support the statement along with their contextual information (e.g. identifiers, authors). </li>
+                    <br>
+                    <li><b>Agents</b>. Information necessary to uniquely identify agents (e.g. first and second knowledge providers, software agents) and their role in the digital hermeneutical process.</li>
+                    <br>
+                    <li><b>Motivations</b>. A classification of motivations used to justify the endorsement of a hypothesis (e.g. auction catalogues, scholars’ verbal communications).</li>
+                    <br>
+                    <li><b>Certainty</b>. Is the quality of a statement that characterises its degree of precision (e.g. “The author wrote his main work in 1994(?)”).</li>
+                    <br>
+                    <li><b>Relations</b>. Relations include those between sources (e.g. an article cited in a cataloguing record), between sources and agents (e.g. authors), between statements and sources (e.g. a source provides evidence for the statement), statements and agents (e.g. people that agree on the statement), and between statements (e.g. attributions in agreement). Relations may also be the subject of assertions (e.g. the relation between an artist and the artwork she created).</li>
+                    <ul>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none; font-size:60%" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Layered approach to formal representation
-                        </button>
-                    </h2>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" style="text-decoration:none; font-size:60%" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Layered approach to formal representation
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+                <div class="text-black-50 text-left">
+                    We foster a source-driven representation of questionable statements. Specifically, questionable statements are represented as facts that are valid in the context of the source where these are recorded, and context information is grouped in layers. Such layers can be summarised as follows: <br>
+                    <br>
+                    <ul>
+                        <li>Layer 0. Factual data that are part of scholars’ background knowledge </li>
+                        <li>Layer 1. The scope of scholars’ questionable statements </li>
+                        <li>Layer 2. Context information for hypotheses assessment </li>
+                        <li>Layer 3. Provenance information of the mining processes </li>
+                    </ul>
+                    Such an organisation allows us to isolate data according to the nature of information at hand and to define patterns between layers. In order to provide an efficient data-driven representation of information, avoiding redundancy and overengineering of ontologies, we propose the usage of named graphs to separate such four layers, and the usage of a high level data model for relating graphs meaningfully. We selected the <a href=”http://nanopub.org/wordpress/”>Nanopublication data model</a> to link graphs relevant to three out of four layers (i.e. factual data excluded). 
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <div class="text-black-50 text-left">
-                            We foster a source-driven representation of questionable statements. Specifically, questionable statements are represented as facts that are valid in the context of the source where these are recorded, and context information is grouped in layers. Such layers can be summarised as follows: <br>
-                            <br>
-                            <ul>
-                                <li>Layer 0. Factual data that are part of scholars’ background knowledge </li>
-                                <li>Layer 1. The scope of scholars’ questionable statements </li>
-                                <li>Layer 2. Context information for hypotheses assessment </li>
-                                <li>Layer 3. Provenance information of the mining processes </li>
-                            </ul>
-                            Such an organisation allows us to isolate data according to the nature of information at hand and to define patterns between layers. In order to provide an efficient data-driven representation of information, avoiding redundancy and overengineering of ontologies, we propose the usage of named graphs to separate such four layers, and the usage of a high level data model for relating graphs meaningfully. We selected the <a href=”http://nanopub.org/wordpress/”>Nanopublication data model</a> to link graphs relevant to three out of four layers (i.e. factual data excluded). 
-                        </div>
-                    </div>
-                </div>
-            
+            </div>
         </div>
         <div class="card">
             <div class="card-header" id="headingThree">
@@ -120,17 +117,18 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                 <div class="card-body">
-                    <div class="text-black-50 text-left">Considering the <a href="#page-top">sake of this research</a>, existing ontologies allow to singularly represent each <a href="#collapseOne">requirement</a>, but none of those covers all the aspects at hand. <br><br>
+                    <div class="text-black-50 text-left">
+                        Considering the <a href="#page-top">sake of this research</a>, existing ontologies allow to singularly represent each <a href="#collapseOne">requirement</a>, but none of those covers all the aspects at hand. <br><br>
                         We therefore designed a modular, orthogonal data model where specific sets of ontologies apply to each layer, with little overlap, so as to avoid harmonisation tasks among a wide set of ontologies and inconsistencies. The ontologies that apply to each layer are the following:<br><br>
                         <ul>
                             <li>
                                 <b>Factual bibliographic and cataloguing data</b> has a pragmatic nature, that is, to allow quick identification of objects involved in the hermeneutical discourse. We selected the <a href="http://www.sparontologies.net/ontologies">SPAR ontologies</a>, a well-known set of ontologies for representing the publishing domain, to describe bibliographic resources and serial objects (e.g. photographs), and <a href="http://www.cidoc-crm.org/cidoc-crm">CIDOC-CRM</a> to describe cultural objects that are unica.
-                            </li>    
+                            </li>
                             <li>
                                 The scope of <b>scholars’ questionable statements</b> is highly domain-dependent, and there are no one-size-fits-all solutions. We foster the reuse of <a href="http://www.cidoc-crm.org/cidoc-crm">CIDOC-CRM</a> as much as possible, supported by ancillary ontologies (mostly extensions of the former) to cover specific issues, such as <a href="http://w3id.org/vir">VIR</a> for representing iconographic aspects, <a href="http://purl.org/emmedi/oaentry">OAEntry</a>  for representing relations between artefacts.
-                            </li>    
+                            </li>
                             <li>    
                                 <b>Context information</b> for hypothesis assessment includes features that characterise the validity of the statement, such as classifications, motivations, responsible agents, and sources. <a href="http://purl.org/emmedi/hico">HiCO</a>, an extension of the <a href="http://www.w3.org/ns/prov">PROV Ontology</a> covers all of such aspects, along with terms from <a href="">CWRC</a> to qualify the degree of certainty.
                             </li>
@@ -142,7 +140,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 
