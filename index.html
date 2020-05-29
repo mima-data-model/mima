@@ -232,8 +232,10 @@
       
             </div>          
         </section> 
+
         <!-- CS -->
-        <section class="signup-section" id="signup">
+
+        <!-- <section class="signup-section" id="signup">-->
             <section class="datamodel-section bg-light text-center" id="casestudies">
                <div class="row">
                   <div class="col-lg-8 mx-auto">
@@ -242,170 +244,427 @@
                </div>
                <div class="container">
                <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+                <li class="nav-item">  
+                    <a class="nav-link active" id="cs1-tab" data-toggle="tab" href="#cs1" role="tab" aria-controls="cs1" aria-selected="true"><br>Hermeneutic act</a>
+                </li>
                   <li class="nav-item">
-                     <a class="nav-link active" id="cs1-tab" data-toggle="tab" href="#cs1" role="tab" aria-controls="cs1" aria-selected="true">Palaeographic view,<br> handwriting analysis</a>
+                     <a class="nav-link" id="cs2-tab" data-toggle="tab" href="#cs2" role="tab" aria-controls="cs2" aria-selected="false">Palaeographic view,<br> handwriting analysis</a>
                   </li>
-               </ul>
-               <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="layer0" role="tabpanel" aria-labelledby="layer0-tab">
-                   <div class="container">
-                        <div class="row">
-                           <div class="col-sm-12">
-                                Consider the following scenario in natural language: <br><br> 
-                                <p class="nl-scenarios"><i>The usage of inscriptional capitals is a means to convey the monumentality of the work “Historiae Ferrariae”</i></p>
-                            </div>
-                        </div>     
-                        <div class="row"> 
-                            <div class="col-md-8">
-                                <img class="cs-images" src="imgs/cs1.svg">   
-                            </div>   
-                            <div class="col-md-4">
-                                <p class="cs-image-description">
-                                The scenario regards the analysis of physical features of the manuscript. The palaeographic analysis of the writing process (<code>crm:E12_Production</code>) that produced a text fragment (<code>crm:E25_Man-Made_Feature</code>) may be characterised by a specific writing system (e.g latin alphabet, <code>crm:E29_Design_or_Procedure</code>), a scriptorial style (e.g. the corsiva umanistica <code>crm:E28_Conceptual_Object crm:P2_has_type crm:E55_Type</code>) and other features (e.g. bindings on the right side, <code>crm:P150_defines_typical_parts_of</code>). Moreover, the analysis of a physical feature such as a graphic typology can convey a symbolic meaning (<code>crm:E28_Conceptual_Object crm:P67_refers_to crm:E90_Symbolic_Object</code>).
-                                </p>
-                            </div>
-                        </div>  
-                        <div class="row bg-light trig-snippet">
-                            <div class="col-sm-12 d-flex justify-content-center">
-                                <div>Here the corresponding code in Trig notation: </div>
-                            </div>
-                            <div class="col-sm-12 d-flex justify-content-center">
-                                <button class="btn btn-primary mt-2" type="button" data-toggle="collapse" data-target="#snippet1" aria-expanded="true" aria-controls="snippet1">snippet</button>
-                            </div>    
-                            <div class="collapse in" id="snippet1" aria-expanded="true" style="width:100%">     
-                                <div class="card card-body alert bg-light">
-                                <pre><code>
-hf:head_cs1 {
-    hf:pub_cs1 a np:Nanopublication .
-    hf:pub_cs1 np:hasAssertion hf:assertion_cs1 .
-    hf:pub_cs1 np:hasProvenance hf:provenance_cs1 .
-    hf:pub_cs1 np:hasPublicationInfo hf:pubInfo_cs1 .
-}  
 
-hf:assertion_cs1 { 
-hf:HF_I_incipit_illustration vir:K1_denotes hf:HF_I_incipit_illustration_rep3 .
-hf:HF_I_incipit_illustration_rep3 crm:P138_represents hf:simbolo_solennità . 
-hf:HF_I_incipit_intro-text-frag_wr crm:P108_has_produced hf:HF_I_incipit_intro-text-frag ;
-    crm:P16_used_specific_object crm:HF_I_incipit_graphic_style . 
-hf:HF_I_incipit_title-frag_wr crm:P108_has_produced hf:HF_I_incipit_title-frag_wr ; 
-    crm:P16_used_specific_object hf:HF_I_incipit_graphic_style . 
-hf:HF_I_incipit_graphic_style a crm:E28_Conceptual_Object ; 
-    crm:P67_refers_to hf:simbolo_solennità .  
+                <!--
+                <li class="nav-item">  
+                    <a class="nav-link" id="cs3-tab" data-toggle="tab" href="#cs3" role="tab" aria-controls="cs3" aria-selected="false"><br>Hermeneutic act</a>
+                </li>
+                <li class="nav-item">  
+                    <a class="nav-link" id="cs4-tab" data-toggle="tab" href="#cs4" role="tab" aria-controls="cs4" aria-selected="false"><br>Hermeneutic act</a>
+                </li>
+                <li class="nav-item">  
+                    <a class="nav-link" id="cs5-tab" data-toggle="tab" href="#cs5" role="tab" aria-controls="cs5" aria-selected="false"><br>Hermeneutic act</a>
+                </li>
+                <li class="nav-item">  
+                    <a class="nav-link" id="cs6-tab" data-toggle="tab" href="#cs6" role="tab" aria-controls="cs6" aria-selected="false"><br>Hermeneutic act</a>
+                </li> -->
+               </ul>
+
+
+               <div class="tab-content" id="myTabContent">   <!-- beginning container for tabs -->
+
+
+                                <!-- beginning cs1 -->
+
+               
+
+<div class="tab-pane fade show active" id="cs1" role="tabpanel" aria-labelledby="cs1-tab">
+
+    <!-- FIRST CONTAINER -->
+    <div class="container">
+        
+        <!-- NL SCENARIO -->
+
+        <div class="row">
+            <div class="col-sm-12">
+                 Consider the following scenario in natural language: <br><br> 
+                 <p class="nl-scenarios"><i>
+                    “In questa mappa l’autore intende illustrare la fisionomia antica del territorio ferrarese, con il corso inferiore del Po, la catena degli Appennini, alcune città e centri minori, il dettaglio dei diversi rami dell’antico delta padano e la strada Via Popolia-Annia”.</i></p>
+             </div>
+         </div>  
+
+        <!-- Grafoo IMAGE + IMAGE DESCRIPTION -->
+         <div class="row"> 
+            <div class="col-md-8">
+                <img class="cs-images" src="imgs/cs2.svg">   
+            </div>   
+            <div class="col-md-4">
+                <p class="cs-image-description">
+                    The illustration (<code>vir:IC21_Iconographical_Atom</code>), is contained in two folios (“44v” and “45r” respectively <code>vir:IC19_Recto</code> and <code>vir:IC20_Verso</code>) belonging to the manuscript IV book (<code>crm:E22_Man-Made_Object</code>). The hermeneutic analyis over the illustration (<code>vir:IC9_Representation</code>) and its parts (<code>vir:IC10 Attribute</code>) links them to some real-world places (<code>crm:P138_represents crm:E53_Place</code>).
+                </p>
+            </div>
+        </div> 
+
+        <!-- TOYDATASET -->
+        <div class="row bg-light trig-snippet">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <div>Here the corresponding code in Trig notation: </div>
+            </div>
+            <div class="col-sm-12 d-flex justify-content-center">
+                <button class="btn btn-primary mt-2" type="button" data-toggle="collapse" data-target="#snippet1" aria-expanded="true" aria-controls="snippet1">snippet</button>
+            </div>    
+            <div class="collapse in" id="snippet1" aria-expanded="true" style="width:100%">     
+                <div class="card card-body alert bg-light">
+                <pre><code>
+
+hf:factual_data {
+    
+    hf:place_corso_po a crm:E53_Place ; 
+        rdfs:label "Corso del Po"@it .
+    hf:place_delta_po a crm:E53_Place ; 
+        rdfs:label "Delta del Po"@it .
+    hf:place_appennini a crm:E53_Place ; 
+        rdfs:label "Catena degli Appennini".
+    hf:place_via_popolia_annia a crm:E53_Place ;  
+        rdfs:label "Via Popolia Annia"@it .}
+
+    hf:head_cs1 {
+        hf:statement_cs1 a np:Nanopublication .
+        hf:statement_cs1 np:hasAssertion hf:assertion_cs1 .
+        hf:statement_cs1 np:hasProvenance hf:provenance_cs1 .
+        hf:statement_cs1 np:hasPublicationInfo hf:pubInfo_cs1 .
+}
+
+hf:assertion_cs1 {
+    hf:Carta_HF_I_44v_45r vir:K1_denotes hf:Carta_HF_I_44v_45r_repr . 
+    hf:Carta_HF_I_44v_45r_repr a vir:IC9_Representation . 
+    hf:Carta_HF_I_44v_45r_repr vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a1 ;
+        rdfs:label "fisionomia antica del territorio ferrarese"@it ;
+        vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a2; 
+        vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a3; 
+        vir:K17_has_attribute hf:Carta_HF_I_44v_45r_repr_a4.
+    hf:Carta_HF_I_44v_45r_repr_a1 rdfs:label "corso inferiore del po"@it ;
+        a vir:IC10_Attribute ; 
+        crm:P138_represents hf:place_corso_po . 
+    hf:Carta_HF_I_44v_45r_repr_a2 rdfs:label "dettaglio di diversi rami del delta padano"@it;
+        a vir:IC10_Attribute ; 
+        crm:P138_represents hf:place_delta_po . 
+    hf:Carta_HF_I_44v_45r_repr_a3 rdfs:label "catena degli appennini"@it;
+        a vir:IC10_Attribute ; 
+        crm:P138_represents hf:place_appennini .
+    hf:Carta_HF_I_44v_45r_repr_a4 rdfs:label "via Popolia Annia"@it ;
+        a vir:IC10_Attribute ;
+        crm:P138_represents hf:place_via_popolia_annia .
 }
 
 hf:provenance_cs1 {
     hf:assertion_cs1 prov:wasGeneratedBy hf:int_act_cs1 . 
-    hf:int_act_cs1 a hico:InterpretationAct ;
-        hico:isExtractedFrom hf:MM_palaeo_material ;
-        cwrc:hasCertainty cwrc:mediumCertainty ;    
-        hico:hasInterpretationType mima:Palaeographical ;
-        hico:hasInterpretationCriterion mima:HandwritingAnalysis 
+    hf:int_act_cs1 a hico:InterpretationAct  ;
+        hico:isExtractedFrom hf:philologicalLecturesMaterial ;
+        cwrc:hasCertainty cwrc:mediumCertainty ;
+        hico:hasInterpretationType mima:philological ;
+        hico:hasInterpretationCriterion mima:hermeneuticAnalysis  
 }
 
 hf:pubInfo_cs1 {
-    hf:pub_cs1 prov:wasAttributedTo hf:Person_VP .
-    hf:pub_cs1 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
-}</code></pre>
-                                  
-                                </div>
-                              </div>
-                            </div> 
-                        </div>     
+    hf:statement_cs1 prov:wasAttributedTo hf:Person_VP .
+    hf:statement_cs1 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
+}
+                    
 
-                   <div class="query-container bg-light">
-                        <div class="row ml-auto d-flex justify-content-center">
-                            <div class="row ml-auto  d-flex justify-content-center">
-                                <div class="col-md-6 col-lg-6">
-                                    <p class="w-100">Which is the scriptorial style of "Historiae Ferrarie" I Proemium and which symbolic meaning it conveys?</p>
-                                </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <p class="w-100">Which are the criterion and type of this analysis?</p>
-                                </div>
-                            </div>
-                            <div class="row w-100 d-flex justify-content-center">    
-                                <div class="col-md-6 col-lg-6">
-                                    <pre class="w-100" style="background-color:white"><code>
+                </code></pre>
+                  
+                </div>
+              </div>
+            </div> 
+        </div>     
 
-SELECT ?type ?symbol
+    <!-- SECOND CONTAINER -->
+
+    <div class="query-container bg-light">
+        <div class="row ml-auto d-flex justify-content-center">
+            <div class="row ml-auto  d-flex justify-content-center">
+                <div class="col-md-6 col-lg-6">
+                    <p class="w-100">Which places are represented in the map?</p>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <p class="w-100">Which is the certainty with which the expert recognise the elements in the map?</p>
+                </div>
+            </div>
+            <div class="row w-100 d-flex justify-content-center">    
+                <div class="col-md-6 col-lg-6">
+                    <pre class="w-100" style="background-color:white"><code>
+
+SELECT ?conc_obj ?place 
+WHERE { 
+
+    graph hf:factual_data {?place a crm:E53_Place.}
+
+    {?G a np:Nanopublication ; 
+    np:hasAssertion hf:assertion_cs1; 
+    np:hasProvenance ?P; 
+    np:hasPublicationInfo ?PI . 
+
+        graph hf:assertion_cs1 {
+            ?conc_obj crm:P138_represents ?place . 
+            {?conc_obj a vir:IC9_Representation}
+            UNION 
+            {?conc_obj a vir:IC10_Attribute}
+        }        
+    }
+}
+                    </code></pre>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <pre class="w-100" style="background-color:white">
+                        <code>
+                                    
+SELECT ?certainty
 where {
     {?G a np:Nanopublication ; 
-        np:hasAssertion hf:assertion_cs1; 
-        np:hasProvenance ?P; 
-        np:hasPublicationInfo ?PI . 
+    np:hasAssertion hf:assertion_cs1; 
+    np:hasProvenance ?P; 
+    np:hasPublicationInfo ?PI .
 
-    graph hf:assertion_cs1 {
+    graph hf:provenance_cs1 {
+        ?A prov:wasGeneratedBy ?intact . 
+        ?intact cwrc:hasCertainty ?certainty. 
+
+        }
+    }
+}
+
+
+
+                        </code>
+                    </pre>
+                </div>    
+            </div>
+            <div class="row w-100 d-flex justify-content-center">
+                <div class="col-md-6 col-lg-6">
+                    <table class="table w-100">
+                        <thead>
+                        <tr>
+                            <th scope="col w-100 text-break">conc_obj</th>
+                            <th scope="col w-100 text-break">place</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-break">Carta_HF_I_44v_45r_repr_a1</td>
+                            <td class="text-break">place_corso_po</td>
+                        </tr>
+                        <tr>
+                            <td class="text-break">Carta_HF_I_44v_45r_repr_a2</td>
+                            <td class="text-break">place_delta_po</td>
+                        </tr>
+                        <tr>
+                            <td class="text-break">Carta_HF_I_44v_45r_repr_a3</td>
+                            <td class="text-break">place_appennini</td>
+                        </tr>
+                        <tr>
+                            <td class="text-break">Carta_HF_I_44v_45r_repr_a4</td>
+                            <td class="text-break">place_via_popolia_annia</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <table class="table w-100">
+                        <thead>
+                            <tr>
+                            <th scope="col w-100 text-break">certainty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td class="text-break">mediumCertainty</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>        
+            </div>
+        </div>    
+    </div> 
+    </div>
+
+
+
+               <!-- end cs1 -->
+
+
+
+
+                <!-- beginning cs2 -->
+
+
+                <div class="tab-pane fade" id="cs2" role="tabpanel" aria-labelledby="cs2-tab">
+                    <div class="container">
+                         <div class="row">
+                            <div class="col-sm-12">
+                                 Consider the following scenario in natural language: <br><br> 
+                                 <p class="nl-scenarios"><i>The usage of inscriptional capitals is a means to convey the monumentality of the work “Historiae Ferrariae”</i></p>
+                             </div>
+                         </div>     
+                         <div class="row"> 
+                             <div class="col-md-8">
+                                 <img class="cs-images" src="imgs/cs1.svg">   
+                             </div>   
+                             <div class="col-md-4">
+                                 <p class="cs-image-description">
+                                 The scenario regards the analysis of physical features of the manuscript. The palaeographic analysis of the writing process (<code>crm:E12_Production</code>) that produced a text fragment (<code>crm:E25_Man-Made_Feature</code>) may be characterised by a specific writing system (e.g latin alphabet, <code>crm:E29_Design_or_Procedure</code>), a scriptorial style (e.g. the corsiva umanistica <code>crm:E28_Conceptual_Object crm:P2_has_type crm:E55_Type</code>) and other features (e.g. bindings on the right side, <code>crm:P150_defines_typical_parts_of</code>). Moreover, the analysis of a physical feature such as a graphic typology can convey a symbolic meaning (<code>crm:E28_Conceptual_Object crm:P67_refers_to crm:E90_Symbolic_Object</code>).
+                                 </p>
+                             </div>
+                         </div>  
+                         <div class="row bg-light trig-snippet">
+                             <div class="col-sm-12 d-flex justify-content-center">
+                                 <div>Here the corresponding code in Trig notation: </div>
+                             </div>
+                             <div class="col-sm-12 d-flex justify-content-center">
+                                 <button class="btn btn-primary mt-2" type="button" data-toggle="collapse" data-target="#snippet1" aria-expanded="true" aria-controls="snippet1">snippet</button>
+                             </div>    
+                             <div class="collapse in" id="snippet1" aria-expanded="true" style="width:100%">     
+                                 <div class="card card-body alert bg-light">
+                                 <pre><code>
+         hf:head_cs1 {
+         hf:pub_cs1 a np:Nanopublication .
+         hf:pub_cs1 np:hasAssertion hf:assertion_cs1 .
+         hf:pub_cs1 np:hasProvenance hf:provenance_cs1 .
+         hf:pub_cs1 np:hasPublicationInfo hf:pubInfo_cs1 .
+         }  
+         
+         hf:assertion_cs1 { 
+         hf:HF_I_incipit_illustration vir:K1_denotes hf:HF_I_incipit_illustration_rep3 .
+         hf:HF_I_incipit_illustration_rep3 crm:P138_represents hf:simbolo_solennità . 
+         hf:HF_I_incipit_intro-text-frag_wr crm:P108_has_produced hf:HF_I_incipit_intro-text-frag ;
+         crm:P16_used_specific_object crm:HF_I_incipit_graphic_style . 
+         hf:HF_I_incipit_title-frag_wr crm:P108_has_produced hf:HF_I_incipit_title-frag_wr ; 
+         crm:P16_used_specific_object hf:HF_I_incipit_graphic_style . 
+         hf:HF_I_incipit_graphic_style a crm:E28_Conceptual_Object ; 
+         crm:P67_refers_to hf:simbolo_solennità .  
+         }
+         
+         hf:provenance_cs1 {
+         hf:assertion_cs1 prov:wasGeneratedBy hf:int_act_cs1 . 
+         hf:int_act_cs1 a hico:InterpretationAct ;
+         hico:isExtractedFrom hf:MM_palaeo_material ;
+         cwrc:hasCertainty cwrc:mediumCertainty ;    
+         hico:hasInterpretationType mima:Palaeographical ;
+         hico:hasInterpretationCriterion mima:HandwritingAnalysis 
+         }
+         
+         hf:pubInfo_cs1 {
+         hf:pub_cs1 prov:wasAttributedTo hf:Person_VP .
+         hf:pub_cs1 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
+         }</code></pre>
+                                   
+                                 </div>
+                               </div>
+                             </div> 
+                         </div>     
+         
+                    <div class="query-container bg-light">
+                         <div class="row ml-auto d-flex justify-content-center">
+                             <div class="row ml-auto  d-flex justify-content-center">
+                                 <div class="col-md-6 col-lg-6">
+                                     <p class="w-100">Which is the scriptorial style of "Historiae Ferrarie" I Proemium and which symbolic meaning it conveys?</p>
+                                 </div>
+                                 <div class="col-md-6 col-lg-6">
+                                     <p class="w-100">Which are the criterion and type of this analysis?</p>
+                                 </div>
+                             </div>
+                             <div class="row w-100 d-flex justify-content-center">    
+                                 <div class="col-md-6 col-lg-6">
+                                     <pre class="w-100" style="background-color:white"><code>
+         
+SELECT ?type ?symbol
+where {
+
+    {?G a np:Nanopublication ; 
+    np:hasAssertion hf:assertion_cs1; 
+    np:hasProvenance ?P; 
+    np:hasPublicationInfo ?PI . 
+         
+        graph hf:assertion_cs1 {
         ?c_object a crm:E28_Conceptual_Object; 
             crm:P2_has_type ?type;
             crm:P67_refers_to ?symbol. 
         } 
-	}
-}
-
-                                    </code></pre>
-                                </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <pre class="w-100" style="background-color:white">
-                                        <code>
-SELECT ?type ?crit
-where {
-{?G a np:Nanopublication ; 
-np:hasAssertion hf:assertion_cs1; 
-np:hasProvenance ?P; 
-np:hasPublicationInfo ?PI .
-
-graph ?P {
-    ?A prov:wasGeneratedBy ?intact . 
-    ?intact hico:hasInterpretationCriterion ?crit; 
-        hici:hasInterpretationType ?type
-
     }
 }
+                                     </code></pre>
+                                 </div>
+                                 <div class="col-md-6 col-lg-6">
+                                     <pre class="w-100" style="background-color:white">
+                                         <code>
+SELECT ?type ?crit
+where {
+    {?G a np:Nanopublication ; 
+    np:hasAssertion hf:assertion_cs1; 
+    np:hasProvenance ?P; 
+    np:hasPublicationInfo ?PI .
+
+    graph hf:provenance_cs1 {
+        ?A prov:wasGeneratedBy ?intact . 
+        ?intact hico:hasInterpretationCriterion ?crit; 
+        hici:hasInterpretationType ?type
+
+        }
+    }
 }
-                                        </code>
-                                    </pre>
-                                </div>    
-                            </div>
-                            <div class="row w-100 d-flex justify-content-center">
-                                <div class="col-md-6 col-lg-6">
-                                    <table class="table w-100">
-                                        <thead>
-                                        <tr>
-                                            <th scope="col w-100 text-break">type</th>
-                                            <th scope="col w-100 text-break">symbol</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td class="text-break">graphicTypology</td>
-                                            <td class="text-break">Monumentality</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <table class="table w-100">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col w-100 text-break">type</th>
-                                            <th scope="col w-100 text-break">crit</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <td class="text-break">Palaeographical</td>
-                                            <td class="text-break">HandwritingAnalysis</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>        
-                            </div>
-                        </div>    
-                    </div>    
-                 </div>
-               </div>
-            </div> 
-        </div>  
-        </section>
+                                         </code>
+                                     </pre>
+                                 </div>    
+                             </div>
+                             <div class="row w-100 d-flex justify-content-center">
+                                 <div class="col-md-6 col-lg-6">
+                                     <table class="table w-100">
+                                         <thead>
+                                         <tr>
+                                             <th scope="col w-100 text-break">type</th>
+                                             <th scope="col w-100 text-break">symbol</th>
+                                         </tr>
+                                         </thead>
+                                         <tbody>
+                                         <tr>
+                                             <td class="text-break">graphicTypology</td>
+                                             <td class="text-break">Monumentality</td>
+                                         </tr>
+                                         </tbody>
+                                     </table>
+                                 </div>
+                                 <div class="col-md-6 col-lg-6">
+                                     <table class="table w-100">
+                                         <thead>
+                                             <tr>
+                                             <th scope="col w-100 text-break">type</th>
+                                             <th scope="col w-100 text-break">crit</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                             <td class="text-break">Palaeographical</td>
+                                             <td class="text-break">HandwritingAnalysis</td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+                                 </div>        
+                             </div>
+                         </div>    
+                     </div>    
+                  </div>
+
+
+                <!-- end cs2 -->
+
+
+
+
+
+            </div> <!-- end contianer for tabs-->
+
+            <!-- end tangs for cs macrostructure -->   
+            </div>   
+            </section>
+
+
+ 
     
         </section>
         <!-- Footer-->
