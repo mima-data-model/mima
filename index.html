@@ -24,7 +24,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#description">Description</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datamodel">Data Model</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Use Cases</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#usecases">Use Cases</a></li>
                     </ul>
                 </div>
             </div>
@@ -235,7 +235,7 @@
 
         <!-- CS -->
 
-        <!-- <section class="signup-section" id="signup">-->
+        <section class="usecases-section" id="usecases">
             <section class="datamodel-section bg-light text-center" id="casestudies">
                <div class="row">
                   <div class="col-lg-8 mx-auto">
@@ -250,11 +250,10 @@
                   <li class="nav-item">
                      <a class="nav-link" id="cs2-tab" data-toggle="tab" href="#cs2" role="tab" aria-controls="cs2" aria-selected="false">Palaeographic view,<br> handwriting analysis</a>
                   </li>
-
-                <!--
                 <li class="nav-item">  
-                    <a class="nav-link" id="cs3-tab" data-toggle="tab" href="#cs3" role="tab" aria-controls="cs3" aria-selected="false"><br>Hermeneutic act</a>
+                    <a class="nav-link" id="cs3-tab" data-toggle="tab" href="#cs3" role="tab" aria-controls="cs3" aria-selected="false">Philologic view, <br> map historical analysis</a>
                 </li>
+                <!--
                 <li class="nav-item">  
                     <a class="nav-link" id="cs4-tab" data-toggle="tab" href="#cs4" role="tab" aria-controls="cs4" aria-selected="false"><br>Hermeneutic act</a>
                 </li>
@@ -379,7 +378,7 @@ hf:pubInfo_cs1 {
 
     <div class="query-container bg-light">
         <div class="row ml-auto d-flex justify-content-center">
-            <div class="row d-flex justify-content-center">
+            <div class="row ml-auto  d-flex justify-content">
                 <div class="col-md-6 col-lg-6">
                     <p class="w-100">Which places are represented in the map?</p>
                 </div>
@@ -652,6 +651,210 @@ where {
 
 
                 <!-- end cs2 -->
+
+                <!-- beginning cs3 -->
+
+
+                <div class="tab-pane fade" id="cs3" role="tabpanel" aria-labelledby="cs3-tab">
+                    <div class="container">
+                            <div class="row">
+                            <div class="col-sm-12">
+                                    Consider the following scenario in natural language: <br><br> 
+                                    <p class="nl-scenarios"><i>“La descrizione dell’addizione e i disegni, inoltre, sono stati utili a Folin per stabilire una datazione abbastanza precisa della mappa e del testo che l’accompagna in particolare, la presenza del ponte di San Biagio, costruito nel settembre 1494, costituirebbe il termine <i>ante quem</i>, l’assenza dei ponti di San Giuliano e di San Francesco costruiti tra aprile e dicembre 1495, i termini <i>post quem non</i>”</i></p>
+                                </div>
+                            </div>     
+                            <div class="row"> 
+                                <div class="col-md-8">
+                                    <img class="cs-images" src="imgs/cs3.svg">   
+                                </div>   
+                                <div class="col-md-4">
+                                    <p class="cs-image-description">
+                                        The illustration represented with the class <code>vir:IC21_Iconographical_Atom</code>, is contained in two folios (“20v” and “21r” respectively <code>vir:IC19_Recto</code> and <code>vir:IC20_Verso</code>) belonging to the manuscript IV book (<code>crm:E22_Man-Made_Object</code>). In this case study the expert is formulating a hypotesis (date of production of <i>Historia Ferrariae</i>) by analysing the map (<code>vir:IC9_Representation</code>) attributes (<code>vir:IC10_Attribute</code>) as well as the map missing attributes (<code>vir:IC9_Representation  mima:has_missing_attribute vir:IC10_Attribute</code>). Both attributes, missing attributes and the whole manuscript have been produced (<code>crm:E7_Activity crm:P16_used_specific_object crm:E22_Man-Made_Object</code>).
+                                        The attributes represent some real-world objects, in this case some bridges (<code>crm:E22_Man-Made_Object</code>) and the temporality between production events (<code>crm:E7_Activity</code>) of both the map and bridges is represented with <code>crm:P120_occurs_before</code>.</p>.
+                                </div>
+                            </div>  
+                            <div class="row bg-light trig-snippet">
+                                <div class="col-sm-12 d-flex justify-content-center">
+                                    <div>Here the corresponding code in Trig notation: </div>
+                                </div>
+                                <div class="col-sm-12 d-flex justify-content-center">
+                                    <button class="btn btn-primary mt-2" type="button" data-toggle="collapse" data-target="#snippet1" aria-expanded="true" aria-controls="snippet1">snippet</button>
+                                </div>    
+                                <div class="collapse in" id="snippet1" aria-expanded="true" style="width:100%">     
+                                    <div class="card card-body alert bg-light">
+                                    <pre><code>
+
+            hf:factual_data {
+                hf:Manuscript_HF_IV crm:P46_is_composed_of hf:HF_IV_Pag20;
+                    crm:P46_is_composed_of hf:HF_IV_Pag21; 
+                    crm:P46_is_composed_of hf:Carta_HF_IV_20v_21r . 
+                hf:HF_IV_Pag20 crm:P56_bears_feature hf:HF_IV_Pag20v; 
+                    a crm:E22-Man-Made_Object . 
+                hf:HF_IV_Pag21 crm:P56_bears_feature hf:HF_IV_Pag21r;
+                    a crm:E22-Man-Made_Object .  
+                hf:HF_IV_Pag20v crm:P56_bears_feature hf:Carta_HF_IV_20v_21r;
+                    a vir:IC20_Verso . 
+                hf:HF_IV_Pag21r crm:P56_bears_feature hf:Carta_HF_IV_20v_21r;
+                    a vir:IC19_Recto . 
+            }
+
+            hf:head_cs3 {
+                hf:pub_cs3 a np:Nanopublication .
+                hf:pub_cs3 np:hasAssertion hf:assertion_cs3 .
+                hf:pub_cs3 np:hasProvenance hf:provenance_cs3 .
+                hf:pub_cs3 np:hasPublicationInfo hf:pubInfo_cs3 .
+            }
+            
+            hf:assertion_cs3 {
+                hf:Carta_HF_IV_20v_21r vir:K1_denotes hf:Carta_HF_IV_20v_21r_repr . 
+                hf:Carta_HF_IV_20v_21r_repr a vir:IC9_Representation . 
+                hf:Carta_HF_IV_20v_21r_repr mima:has_missing_attribute hf:Carta_HF_IV_20v_21r_repr_a1 ;
+                    mima:has_missing_attribute hf:Carta_HF_IV_20v_21r_repr_a2; 
+                    vir:K17_has_attribute hf:Carta_HF_IV_20v_21r_repr_a3. 
+                hf:Carta_HF_IV_20v_21r_repr_a3 a vir:IC10_Attribute ;
+                    crm:P138_represents hf:ponte_san_giuliano .
+                hf:ponte_san_giuliano a crm:E22_Man-Made_Object ; 
+                hf:place_ponte_san_giuliano a vir:IC10_Attribute ;
+                    crm:P138_represents hf:ponte_san_francesco .
+                hf:ponte_san_francesco a crm:E22_Man-Made_Object ;
+                hf:Carta_HF_IV_20v_21r_repr_a3  a vir:IC10_Attribute ;
+                    crm:P138_represents hf:ponte_san_biagio . 
+                hf:ponte_san_biagio a crm:E22_Man-Made_Object .
+                hf:ponte_san_biagio_prod a crm:E7_Activity ; 
+                    crm:P16_used_specific_object hf:ponte_san_biagio ; 
+                    crm:P4_has_time-span hf:september_1494 ; 
+                    crm:P120_occurrs_before hf:Carta_HF_IV_20v_21r_prod .
+                hf:ponte_san_francesco_prod a crm:E7_Activity;
+                    crm:P16_used_specific_object hf:ponte_san_francesco ;
+                    crm:P4_has_time-span hf:april_december_1495 .
+                hf:ponte_san_giuliano_prod a crm:E7_Activity ; 
+                    crm:P16_used_specific_object hf:ponte_san_giuliano ;
+                    crm:P4_has_time-span hf:april_december_1495 . 
+                hf:Carta_HF_IV_20v_21r_prod a crm:E7_Activity ; 
+                    crm:P16_used_specific_object hf:Carta_HF_IV_20v_21r ;
+                    crm:P120_occurrs_before hf:ponte_san_francesco_prod ; 
+                    crm:P120_occurs_before hf:ponte_san_giuliano_prod . 
+            }
+            
+            hf:provenance_cs3 {
+                hf:assertion_cs3 prov:wasGeneratedBy hf:int_act_cs3 . 
+                hf:int_act_cs3 a hico:InterpretationAct  ; 
+                    hico:isExtractedFrom hf:philologicalLecturesMaterial ;
+                    cwrc:hasCertainty cwrc:mediumCertainty ;
+                    hico:hasInterpretationType mima:philological ;
+                    hico:hasInterpretationCriterion mima:hermeneuticAnalysis
+            }
+            
+            hf:pubInfo_cs3 {
+                hf:pub_cs3 prov:wasAttributedTo hf:Person_VP .
+                hf:pub_cs3 prov:generatedAtTime "2020-01-14T12:45:00Z"^^xsd:dateTime .   
+            }
+</code></pre>
+                                    
+                                    </div>
+                                </div>
+                                </div> 
+                            </div>     
+            
+                    <div class="query-container bg-light">
+                            <div class="row ml-auto d-flex justify-content-center">
+                                <div class="row ml-auto  d-flex justify-content-center">
+                                    <div class="col-md-6 col-lg-6">
+                                        <p class="w-100">Which are the elements not actually present in the map, but still mentioned by the expert?</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <p class="w-100">Which are the real-world objects depicted in the map according to the opinion of the expert?</p>
+                                    </div>
+                                </div>
+                                <div class="row w-100 d-flex justify-content-center">    
+                                    <div class="col-md-6 col-lg-6">
+                                        <pre class="w-100" style="background-color:white"><code>
+            
+SELECT ?attr ?label
+where {
+
+    {?G a np:Nanopublication ; 
+    np:hasAssertion hf:assertion_cs3; 
+    np:hasProvenance ?P; 
+    np:hasPublicationInfo ?PI . 
+            
+        graph hf:assertion_cs3 {
+        ?repr mima:has_missing_attribute ?attr . 
+        ?attr rdfs:label ?label
+        } 
+    }
+}
+                                        </code></pre>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <pre class="w-100" style="background-color:white">
+                                            <code>
+
+SELECT ?attr ?object ?obj_type 
+where {
+
+    {?G a np:Nanopublication ; 
+    np:hasAssertion hf:assertion_cs3; 
+    np:hasProvenance ?P; 
+    np:hasPublicationInfo ?PI . 
+            
+        graph hf:assertion_cs3 {
+        ?repres vir:K17_has_attribute ?attr . 
+        ?attr crm:P138_represents ?object . 
+        ?object a ?obj_type . 
+        } 
+    }
+}
+                                            </code>
+                                        </pre>
+                                    </div>    
+                                </div>
+                                <div class="row w-100 d-flex justify-content-center">
+                                    <div class="col-md-6 col-lg-6">
+                                        <table class="table w-100">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col w-100 text-break">attr</th>
+                                                <th scope="col w-100 text-break">label</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="text-break">Carta_HF_IV_20v_21r_repr_a1</td>
+                                                <td class="text-break">"Ponte san Giuliano"@it</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-break">Carta_HF_IV_20v_21r_repr_a2</td>
+                                                <td class="text-break">"Ponte di San Francesco"@it</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <table class="table w-100">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col w-100 text-break">attr</th>
+                                                <th scope="col w-100 text-break">object</th>
+                                                <th scope="col w-100 text-break">obj_type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <td class="text-break">Carta_HF_IV_20v_21r_repr_a3</td>
+                                                <td class="text-break">ponte_san_biagio</td>
+                                                <td class="text-break">crm:E22_Man-Made_Object</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>        
+                                </div>
+                            </div>    
+                        </div>    
+                    </div>
+
+
+                <!-- end cs3 -->
 
 
 
