@@ -10338,6 +10338,9 @@ body {
 .nl-scenarios {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
+  margin-left:4rem; 
+  margin-right:4rem; 
+  margin-bottom:4rem;
 }
 
 p.nl-scenarios::first-letter {
